@@ -6,4 +6,76 @@ Api  para trabalhar com arquivos:
 	-> pegar um arquivo da pasta e fazer download;
 	-> upload de arquivo para dentro da pasta;
 
-	
+
+
+criar a pasta 'output', dentro da pasta onde se esta trabalhando. 
+Conectar nela pelo terminal do VSCode
+cd .\output\
+
+copie o endereço do Diretório e adicione na variavel ????  "DIRETORIO"
+
+D:\\projetos\\javascrypt_e_python\\Roger\\output	
+
+Sempre onde houver barra, substituir por '\\'
+
+Verificar se o "DIRETORIO" e o "nome_do_arquivo" é um arquivo, estando dentro deste diretório
+
+
+para executar:
+
+no terminal 
+
+python .\main.py
+
+
+erro 
+
+
+pip install Flask
+
+c:\python39\python.exe -m pip install --upgrade pip
+
+
+
+return send_from_directory(DIRETORIO, nome_do_arquivo, as_attachment=True)
+
+
+as_attachment=False
+abre pagina html com o arquivo 
+as_attachment=True
+baixa o arquivo no pc
+
+
+http://127.0.0.1:8000
+
+
+abrir no navegador
+
+
+http://127.0.0.1:8000/
+
+
+Not Found
+The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+
+
+caminho correto:
+http://127.0.0.1:8000/arquivos/teste.txt
+arquivo baixado com sucesso
+
+
+
+Fazer upload dos arquivos 
+
+
+<FileStorage: 'teste1.txt' ('text/plain')>
+resposta que aparece no terminal, nos informando que esta tudo certo.
+
+
+Na pasta Output já consta ambos os arquivos,  o cria antes para fazer o download,  e o enviado agora. 
+
+
+
+
+
