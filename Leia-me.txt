@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=oKtJdsFfNnI
+
+
+Api  para trabalhar com arquivos: 
+	-> listar todos os arquivos da pasta;
+	-> pegar um arquivo da pasta e fazer download;
+	-> upload de arquivo para dentro da pasta;
+
+	
