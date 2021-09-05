@@ -1,6 +1,14 @@
 https://www.youtube.com/watch?v=oKtJdsFfNnI
 
 
+Videos que iremos trabalhar:
+	-> criar com python a leitura: 
+	-> crud com python: https://www.youtube.com/watch?v=WDpPGFkI9UU
+
+	-> (get - mostrar na tela ): https://www.youtube.com/watch?v=YVf7iy2sIOw
+
+
+
 Api  para trabalhar com arquivos: 
 	-> listar todos os arquivos da pasta;
 	-> pegar um arquivo da pasta e fazer download;
@@ -77,5 +85,23 @@ Na pasta Output já consta ambos os arquivos,  o cria antes para fazer o downloa
 
 
 
+https://www.youtube.com/watch?v=YVf7iy2sIOw
+Consumir a API e jogar as informações em HTML 
+api - criada em python
+Pagina HTML lincando para a pagina main.js 
+
+Na pagina main teremos as funções para apresentar ( main ), ver ( GET) e a ação ( main )
 
 
+CRUD-Flask
+executar no terminal
+>>>>  python .\app.py
+
+@app.route("/usuarios", method=["GET"])
+def seleciona_usuarios():
+    usuarios_classe = Usuario.query.all()
+    print( usuarios_classe)
+    return Response()
+
+
+	http://127.0.0.1:5000/

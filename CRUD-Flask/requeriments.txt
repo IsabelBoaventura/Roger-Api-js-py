@@ -1,0 +1,67 @@
+>>> flask
+    Instalar
+        pip install flask
+>>> flask_sqlalchemy
+        pip install flask_sqlalchemy
+>>> mysql-connector-python
+        pip install mysql-connector-python
+>>> mysqlclient
+        pip install mysqlclient
+
+Para atualizar a minha versão do python
+    c:\python39\python.exe -m pip install --upgrade pip
+
+
+Dentro do app.py
+>>> from flask import Flask, Reponse, request 
+onde o FLASK  será para criar as rotas do API 
+RESPONSE para o retorno do Api
+request para trabalhar com as respostas 
+
+>>> from flask_sqlalchemy import SQLAlchemy
+classe que ira trabalhar com o banco de dados 
+
+
+Banco de Dados: usuario
+Tabela: usuarios
+
+CREATE TABLE `usuario`.`usuarios` (
+    `Id` INT NULL AUTO_INCREMENT PRIMARY KEY, 
+    `Nome` VARCHAR(30) NOT NULL, 
+    `Email` VARCHAR(50) NOT NULL
+) ENGINE = MyISAM;
+
+
+Para gerar a tabela pelo codigo pode usar  db.created_all()
+Entretanto, se este codigo estiver dentro do sistema, toda a vez que o sistema for reiniciado,
+ele pode tentar criar a tabela novametne,  
+NÃO recomendável que seja feito assim 
+
+Recomendado criar pelo Terminal pip
+
+>>> python 
+mostra as informações do python e permite que executamos codigos do python 
+
+>>> from app import db
+>>> db.create_all()
+
+para sair do módulo de edição do python 
+>>> exit()
+
+
+
+
+# CRUD 
+
+@app.route("/usuarios", method=["GET"])
+def seleciona_usuarios():
+    usuarios_classe = Usuario.query.all()
+    print( usuarios_classe)
+    return Response()
+
+
+
+
+
+
+
