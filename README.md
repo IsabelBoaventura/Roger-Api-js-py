@@ -10,18 +10,16 @@ https://www.youtube.com/watch?v=oKtJdsFfNnI
 ![image](https://user-images.githubusercontent.com/1613816/131062213-13b9a8da-bd06-4e9a-9dbd-631c609ef962.png)
 
 
-# Segundo Parte
+# Segunda Parte
 ## CRUD
 CRUD COMPLETO FLASK com SQLALCHEMY em Python - API REST e BANCO DE DADOS 2021
 
 https://www.youtube.com/watch?v=WDpPGFkI9UU
 
 Instalar bibliotecas:
+Flask
+# `pip install flask`
 
-
->>> flask
-    Instalar
-        pip install flask
 >>> flask_sqlalchemy
         pip install flask_sqlalchemy
 >>> mysql-connector-python
