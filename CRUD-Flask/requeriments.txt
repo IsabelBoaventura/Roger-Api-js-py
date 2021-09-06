@@ -53,11 +53,40 @@ para sair do módulo de edição do python
 
 # CRUD 
 
+criei o banco Manualmente 
+CREATE DATABASE `banco_usuario` ;
+
 @app.route("/usuarios", method=["GET"])
 def seleciona_usuarios():
     usuarios_classe = Usuario.query.all()
     print( usuarios_classe)
-    return Response()
+    
+
+return Response()
+
+
+
+para rodar 
+>>> python .\app.py
+
+
+testar no postman
+
+http://127.0.0.1:5000/usuarios
+
+
+Depois de corrigido todos os erros,  entre eles Columm no lugar de Column para a situacao
+e criada a coluna situacao direto no banco de dados,  agora o postman esta respondendo com a resposta 200 
+ uhuu 
+
+Conseguimos fazer a requisição ao postman
+agora temos de trazer as informações 
+
+Trazer as informações do Banco, transforma em Json
+e mostrar na tela 
+
+
+
 
 
 
