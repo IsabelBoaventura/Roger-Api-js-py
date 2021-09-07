@@ -46,7 +46,7 @@ def seleciona_usuario(id):
     return gera_response(200, "UsuarioID", usuario_json)
 
 # Cadastrar 
-@app.routes("/usuario", methods=["POST"])
+@app.route("/usuario", methods=["POST"])
 def cria_usuario():
     body = request.get_json()
     # validar se venho os parameros 
@@ -57,12 +57,51 @@ def cria_usuario():
         db.session.add(usuario)
         db.session.commit()
 
-        return gera_response(201, "Cria_usuario", usuario.to_json, "Criado com sucesso")
+        return gera_response(201, "Cria_usuario", usuario.to_json(), "Criado com sucesso")
     except Exception as e:
         print(e)
-        return gera_response(400, "Cria_Usuario", )
+        return gera_response(400, "Cria_Usuario", {}, "Erro ao cadastrar " )
+
+
+
 # Atualizar
+@app.route("/usuario/<id>", methods = ["PUT"])
+# methods PUT é o padrao para atualizacao 
+def atualiza_usuario(id):
+    # pegar o usuario 
+    usuario_objeto = Usuario.query.filter_by(id=id).first()
+    # pegar modificacoes 
+    body = request.get_json()
+
+    # adicionar as modificacoes
+    # exucutar apenas as modificacoes existentes
+    try:
+        if('nome' in body):
+            usuario_objeto.nome = body['nome']
+        if('email' in body):
+            usuario_objeto.email = body['email']
+        if('situacao' in body):
+            usuario_objeto.situacao = body['situacao']
+        
+        db.session.add(usuario_objeto)
+        db.session.commit()
+        return gera_response(200, "Usuario_Alterado", usuario_objeto.to_json(), "Alterado com sucesso")
+    except Exception as e:
+        print('Erro ao alterar' , e )
+        return gera_response(400, "Erro ao Alterar", {}, "Erro ao Alterar")
+
 # Deletar
+@app.route("/usuario/<id>", methods=["DELETE"])
+def deleta_usuario(id):
+    usuario_objeto = Usuario.query.filter_by(id=id).first()
+
+    try:
+        db.session.delete(usuario_objeto)
+        db.session.commit()
+        return gera_response(200, "Usuario Deletado", usuario_objeto.to_json(), "Deletado com sucesso")
+    except Exception as e:
+        print('Erro ao deletar', e)
+        return gera_response(400, "Deletar Usuario", {}, "Erro ao Deletar usuario")
 
 
 def gera_response(status, nome_do_conteudo, conteudo, mensagem = False ):
