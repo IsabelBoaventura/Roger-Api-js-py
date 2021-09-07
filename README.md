@@ -48,4 +48,10 @@ Acesso com o postman
 
 ![image](https://user-images.githubusercontent.com/1613816/132132426-23ce15eb-28d8-4c7b-89fa-7ea58223f4cc.png)
 
+## CRUD
+Adicionado no banco de Dados
+
+![image](https://user-images.githubusercontent.com/1613816/132275898-6f53283c-77a1-4bb6-a627-2eade9dfbdfa.png)
+
+
 
