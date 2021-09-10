@@ -51,4 +51,15 @@ A rota esta certa e trouxe a mesma resposta no Postman e no Navegador.
 
 ![image](https://user-images.githubusercontent.com/1613816/132787147-1c88e6e3-099e-4fd4-8a44-19c671bea594.png)
 
+Trabalhando com o método POST. Post irá receber informações do Frond end para o Back end.
+<CODE>
+@app.route("/cadastra/usuario", methods=["POST"])
+def cadastra_usuario():
+    return {"id": 0}
+</CODE>
+
+
+![image](https://user-images.githubusercontent.com/1613816/132788316-b3ebc9f7-38fa-4b99-a921-f06bc753f288.png)
+
+
 
