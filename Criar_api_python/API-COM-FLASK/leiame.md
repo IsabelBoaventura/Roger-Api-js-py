@@ -38,15 +38,13 @@ Cria a funcao
 Irá retornar com o que sera apresentado 
 
 A cada modificação no Código rodar novamente o codigo para ele funcionar corretamente
->>>> ctrl + c
->>>> python routes.py
+Para fazer o código parar de executar, digite <code> ctrl + c </code> no terminal;
+Para fazer o Código voltar a rodar, digite <code> python routes.py </code> no terminal;
 
 Verificar a rota no postman
->>>> http://127.0.0.1:5000/olamundo
+<code>  http://127.0.0.1:5000/olamundo </code>
 
-A rota esta certa e trouxe a mesma resposta no navegador. 
-
-
+A rota esta certa e trouxe a mesma resposta no Postman e no Navegador. 
 
 ![image](https://user-images.githubusercontent.com/1613816/132787147-1c88e6e3-099e-4fd4-8a44-19c671bea594.png)
 
