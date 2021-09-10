@@ -28,7 +28,7 @@ Criando Rotas para testes.
 Rota GET 
 
 Cria a rota
-<code>@app.route("/olamundo", methods=["GET"])</code>
+<Code>@app.route("/olamundo", methods=["GET"])</Code>
 Cria a funcao
 def ola_mundo():
     return {"ola" : "mundo"}
