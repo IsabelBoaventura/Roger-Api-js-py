@@ -9,13 +9,13 @@ Terminal do VSCode
 ### pip install flask
 
 Importa flask no arquivo que será trabalhado ( routes.py)
-#### from flask import Flask
+<code> from flask import Flask </code>
 
 Adiciona a aplicação
-#### app = Flask ("Youtube")
+<code> app = Flask ("Youtube") </code>
 
 Comando de Execução da aplicação
-#### app.run()
+<code> app.run() </code>
 
 Apenas com estas 3 linhas de códigos já tem o programa rodando, mesmo sem ter nada nele.
 
