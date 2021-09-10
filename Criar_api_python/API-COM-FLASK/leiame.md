@@ -31,13 +31,16 @@ Rota GET
 
 Cria a rota
 <code>@app.route("/olamundo", methods=["GET"])</code>
+
 Cria a funcao
 <code>def ola_mundo():
     return {"ola" : "mundo"}
 </code>
+
 Irá retornar com o que sera apresentado 
 
 A cada modificação no Código rodar novamente o codigo para ele funcionar corretamente.
+
 Para fazer o código parar de executar, digite <code> ctrl + c </code> no terminal;
 Para fazer o Código voltar a rodar, digite <code> python routes.py </code> no terminal;
 
