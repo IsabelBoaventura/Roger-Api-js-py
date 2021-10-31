@@ -1,5 +1,7 @@
 # Roger-Api-js-py
 
+## FINALIZADO E INCONCLUSIVO
+
 Python Flask API upload e download Arquvios - Salvar e Baixar arquivo com Python
 
 Baseado em: https://github.com/vieiraroger/flask-salvar-arquivos
