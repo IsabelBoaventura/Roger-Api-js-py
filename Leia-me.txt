@@ -83,7 +83,7 @@ resposta que aparece no terminal, nos informando que esta tudo certo.
 
 Na pasta Output já consta ambos os arquivos,  o cria antes para fazer o download,  e o enviado agora. 
 
-
+-----------------------------
 
 https://www.youtube.com/watch?v=YVf7iy2sIOw
 Consumir a API e jogar as informações em HTML 
@@ -92,6 +92,10 @@ Pagina HTML lincando para a pagina main.js
 
 Na pagina main teremos as funções para apresentar ( main ), ver ( GET) e a ação ( main )
 
+
+
+
+------------------------
 
 CRUD-Flask
 executar no terminal
@@ -105,3 +109,10 @@ def seleciona_usuarios():
 
 
 	http://127.0.0.1:5000/
+
+--------------------
+
+https://www.youtube.com/watch?v=efr1xbwFlKU
+
+Requisição POST com JavaScript PURO - Formulario HTML para uma API POST
+

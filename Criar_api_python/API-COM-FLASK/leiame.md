@@ -9,13 +9,13 @@ Terminal do VSCode
 ### pip install flask
 
 Importa flask no arquivo que será trabalhado ( routes.py)
-<code> from flask import Flask </code>
+#### from flask import Flask
 
 Adiciona a aplicação
-<code> app = Flask ("Youtube") </code>
+#### app = Flask ("Youtube")
 
 Comando de Execução da aplicação
-<code> app.run() </code>
+#### app.run()
 
 Apenas com estas 3 linhas de códigos já tem o programa rodando, mesmo sem ter nada nele.
 
@@ -31,35 +31,17 @@ Rota GET
 
 Cria a rota
 <code>@app.route("/olamundo", methods=["GET"])</code>
-
 Cria a funcao
 <code>def ola_mundo():
     return {"ola" : "mundo"}
 </code>
-
 Irá retornar com o que sera apresentado 
 
-A cada modificação no Código rodar novamente o codigo para ele funcionar corretamente.
-
-Para fazer o código parar de executar, digite <code> ctrl + c </code> no terminal;
-Para fazer o Código voltar a rodar, digite <code> python routes.py </code> no terminal;
+A cada modificação no Código rodar novamente o codigo para ele funcionar corretamente
+>>>> ctrl + c
+>>>> python routes.py
 
 Verificar a rota no postman
-<code>  http://127.0.0.1:5000/olamundo </code>
+>>>> http://127.0.0.1:5000/olamundo
 
-A rota esta certa e trouxe a mesma resposta no Postman e no Navegador. 
-
-![image](https://user-images.githubusercontent.com/1613816/132787147-1c88e6e3-099e-4fd4-8a44-19c671bea594.png)
-
-Trabalhando com o método POST. Post irá receber informações do Frond end para o Back end.
-<CODE>
-@app.route("/cadastra/usuario", methods=["POST"])
-def cadastra_usuario():
-    return {"id": 0}
-</CODE>
-
-
-![image](https://user-images.githubusercontent.com/1613816/132788316-b3ebc9f7-38fa-4b99-a921-f06bc753f288.png)
-
-
-
+A rota esta certa e trouxe a mesma resposta no navegador. 
